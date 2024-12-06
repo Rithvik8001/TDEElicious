@@ -1,15 +1,13 @@
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Utensils } from "lucide-react";
-// import DotPattern from "@/components/ui/dot-pattern";
-// import GridPattern from "@/components/ui/grid-pattern";
-import RetroGrid from "@/components/ui/retro-grid";
+import DotPattern from "@/components/ui/dot-pattern";
 
 export default function Home() {
   return (
     <div className="min-h-screen flex flex-col">
-      <RetroGrid />
-      <header className="flex-grow flex items-center justify-center p-4 sm:p-8 z-50">
+      <DotPattern className="opacity-65" />
+      <header className="flex flex-grow items-center justify-center p-4 sm:p-8 z-50">
         <div className="max-w-3xl mx-auto text-center">
           <h1 className="text-5xl sm:text-7xl font-extrabold mb-4 text-orange-600">
             TDEElicious
@@ -51,7 +49,7 @@ export default function Home() {
           </Link>
         </div>
       </header>
-      <footer className="text-center py-4 text-gray-600 font-medium">
+      <footer className="text-center py-4 text-gray-600 font-medium z-50">
         Built with ❤️ by <span className="underline">Rithvik</span>
       </footer>
     </div>
