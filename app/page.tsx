@@ -1,12 +1,14 @@
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Utensils } from "lucide-react";
-import DotPattern from "@/components/ui/dot-pattern";
+// import DotPattern from "@/components/ui/dot-pattern";
+// import GridPattern from "@/components/ui/grid-pattern";
+import RetroGrid from "@/components/ui/retro-grid";
 
 export default function Home() {
   return (
     <div className="min-h-screen flex flex-col">
-      <DotPattern className="opacity-45" />
+      <RetroGrid />
       <header className="flex-grow flex items-center justify-center p-4 sm:p-8 z-50">
         <div className="max-w-3xl mx-auto text-center">
           <h1 className="text-5xl sm:text-7xl font-extrabold mb-4 text-orange-600">
