@@ -17,7 +17,6 @@ import {
 import Link from "next/link";
 import { motion } from "framer-motion";
 
-// Helper functions remain unchanged
 function calculateTDEE(data: any) {
   const { age, gender, weight, height, activityLevel, bodyFat } = data;
   let bmr;
@@ -84,7 +83,6 @@ function getActivityLevelDescription(level: string) {
   return descriptions[level] || level;
 }
 
-// Create a separate component for the results content
 function ResultsContent() {
   const searchParams = useSearchParams();
   const data = Object.fromEntries(searchParams.entries());
@@ -316,7 +314,6 @@ function ResultsContent() {
   );
 }
 
-// Main Results component with Suspense boundary
 export default function Results() {
   return (
     <div className="min-h-screen flex flex-col items-center justify-center p-4 sm:p-8 bg-orange-50">

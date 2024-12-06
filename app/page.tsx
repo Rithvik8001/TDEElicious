@@ -72,7 +72,7 @@ export default function Home() {
         </div>
       </main>
       <footer className="text-center py-4 text-gray-600 font-medium">
-        Built with ❤️ by Rithvik
+        Made with ❤️ by Rithvik
       </footer>
     </div>
   );
